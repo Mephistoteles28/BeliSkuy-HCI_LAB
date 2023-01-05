@@ -1,13 +1,47 @@
 /* Add some styling to the page */
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
 body {
   font-family: Arial, sans-serif;
   background-color: #734444;
 }
-header {
+
+.logo{
+  width: 8rem;
+}
+
+.header {
   padding: 20px;
   text-align: center;
   background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
+
+.navigate{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.navigate a{
+  color: black;
+  padding: 0 1vh;
+  font-size: large;
+  text-decoration: none;
+}
+
+.navigate a:hover{
+  opacity: 70%;
+  font-size: ;
+}
+
 h1 {
   margin: 0;
 }
