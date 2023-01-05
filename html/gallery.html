@@ -3,6 +3,8 @@
   <head>
     <title>BeliSkuy</title>
     <link rel="stylesheet" href="../css/gallery-style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="../js/script.js" defer></script>
   </head>
   <body>
     <div class="header">
@@ -21,85 +23,92 @@
     </div>
 
     <div class="isi">
+      
       <div class="kategori">
-        <div class="tulisankategori">All</div>
-        <span class="tulisankategori">Clothes</span>
-        <span class="tulisankategori">Pants</span>
-        <span class="tulisankategori">Shoes</span>
+        <div class="tulisankategori" id="all">All</div>
+        <span class="tulisankategori" id="clothes">Clothes</span>
+        <span class="tulisankategori" id="pants">Pants</span>
+        <span class="tulisankategori" id="shoes">Shoes</span>
       </div>
       <div class="main">
-        <section class="product">
-          <img src="../img/shirt/shirt1.jpg" alt="Shirt 1" />
-          <h3>Shirt 1</h3>
-          <p>Rp 50000</p>
-          <button onclick="addToCart(this)">Add to Cart</button>
-        </section>
-        <section class="product">
-          <img src="../img/shirt/shirt2.jpg" alt="Shirt 2" />
-          <h3>Shirt 2</h3>
-          <p>Rp 50000</p>
-          <button>Add to Cart</button>
-        </section>
-        <section class="product">
-          <img src="../img/shirt/shirt3.jpg" alt="Shirt 3" />
-          <h3>Shirt 3</h3>
-          <p>Rp 50000</p>
-          <button>Add to Cart</button>
-        </section>
-        <section class="product">
-          <img src="../img/shirt/shirt4.jpg" alt="Shirt 4" />
-          <h3>Shirt 4</h3>
-          <p>Rp 50000</p>
-          <button>Add to Cart</button>
-        </section>
-        <section class="product">
-          <img src="../img/pants/pants1.jpg" alt="Pants 1" />
-          <h3>Pants 1</h3>
-          <p>Rp 100000</p>
-          <button>Add to Cart</button>
-        </section>
-        <section class="product">
-          <img src="../img/pants/pants2.jpg" alt="Pants 2" />
-          <h3>Pants 2</h3>
-          <p>Rp 100000</p>
-          <button>Add to Cart</button>
-        </section>
-        <section class="product">
-          <img src="../img/pants/pants3.jpg" alt="Pants 3" />
-          <h3>Pants 3</h3>
-          <p>Rp 100000</p>
-          <button>Add to Cart</button>
-        </section>
-        <section class="product">
-          <img src="../img/pants/pants4.jpg" alt="Pants 4" />
-          <h3>Pants 4</h3>
-          <p>Rp 100000</p>
-          <button>Add to Cart</button>
-        </section>
-        <section class="product">
-          <img src="../img/shoes/shoes1.jpg" alt="Shoes 1" />
-          <h3>Shoes 1</h3>
-          <p>Rp 250000</p>
-          <button>Add to Cart</button>
-        </section>
-        <section class="product">
-          <img src="../img/shoes/shoes2.jpg" alt="Shoes 2" />
-          <h3>Shoes 2</h3>
-          <p>Rp 250000</p>
-          <button>Add to Cart</button>
-        </section>
-        <section class="product">
-          <img src="../img/shoes/shoes3.jpg" alt="Shoes 3" />
-          <h3>Shoes 3</h3>
-          <p>Rp 250000</p>
-          <button>Add to Cart</button>
-        </section>
-        <section class="product">
-          <img src="../img/shoes/shoes4.jpg" alt="Shoes 4" />
-          <h3>Shoes 4</h3>
-          <p>Rp 250000</p>
-          <button>Add to Cart</button>
-        </section>
+        <div class="row shirt">
+          <section class="product">
+            <img src="../img/shirt/shirt1.jpg" alt="Shirt 1" />
+            <h3>Shirt 1</h3>
+            <p>Rp 50000</p>
+            <button onclick="addToCart(this)">Add to Cart</button>
+          </section>
+          <section class="product">
+            <img src="../img/shirt/shirt2.jpg" alt="Shirt 2" />
+            <h3>Shirt 2</h3>
+            <p>Rp 50000</p>
+            <button>Add to Cart</button>
+          </section>
+          <section class="product">
+            <img src="../img/shirt/shirt3.jpg" alt="Shirt 3" />
+            <h3>Shirt 3</h3>
+            <p>Rp 50000</p>
+            <button>Add to Cart</button>
+          </section>
+          <section class="product">
+            <img src="../img/shirt/shirt4.jpg" alt="Shirt 4" />
+            <h3>Shirt 4</h3>
+            <p>Rp 50000</p>
+            <button>Add to Cart</button>
+          </section>
+        </div>
+        <div class="row pants">
+          <section class="product">
+            <img src="../img/pants/pants1.jpg" alt="Pants 1" />
+            <h3>Pants 1</h3>
+            <p>Rp 100000</p>
+            <button>Add to Cart</button>
+          </section>
+          <section class="product">
+            <img src="../img/pants/pants2.jpg" alt="Pants 2" />
+            <h3>Pants 2</h3>
+            <p>Rp 100000</p>
+            <button>Add to Cart</button>
+          </section>
+          <section class="product">
+            <img src="../img/pants/pants3.jpg" alt="Pants 3" />
+            <h3>Pants 3</h3>
+            <p>Rp 100000</p>
+            <button>Add to Cart</button>
+          </section>
+          <section class="product">
+            <img src="../img/pants/pants4.jpg" alt="Pants 4" />
+            <h3>Pants 4</h3>
+            <p>Rp 100000</p>
+            <button>Add to Cart</button>
+          </section>
+        </div>
+        <div class="row shoes">
+          <section class="product">
+            <img src="../img/shoes/shoes1.jpg" alt="Shoes 1" />
+            <h3>Shoes 1</h3>
+            <p>Rp 250000</p>
+            <button>Add to Cart</button>
+          </section>
+          <section class="product">
+            <img src="../img/shoes/shoes2.jpg" alt="Shoes 2" />
+            <h3>Shoes 2</h3>
+            <p>Rp 250000</p>
+            <button>Add to Cart</button>
+          </section>
+          <section class="product">
+            <img src="../img/shoes/shoes3.jpg" alt="Shoes 3" />
+            <h3>Shoes 3</h3>
+            <p>Rp 250000</p>
+            <button>Add to Cart</button>
+          </section>
+          <section class="product">
+            <img src="../img/shoes/shoes4.jpg" alt="Shoes 4" />
+            <h3>Shoes 4</h3>
+            <p>Rp 250000</p>
+            <button>Add to Cart</button>
+          </section>
+        </div>
       </div>
     </div>
 
@@ -123,5 +132,7 @@
         </a>
       </div>
     </div>
+
+
   </body>
 </html>
