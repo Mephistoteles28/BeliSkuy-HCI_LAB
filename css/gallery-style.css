@@ -5,16 +5,16 @@
   margin: 0;
 }
 
-body {
+body{
   font-family: Arial, sans-serif;
   background-color: #734444;
 }
 
-.logo {
+.logo{
   width: 8rem;
 }
 
-.header {
+.header{
   padding: 10px;
   text-align: center;
   background-color: white;
@@ -54,13 +54,13 @@ body {
 
 .logocart{
   width: 3rem;
-  padding-left: 50vw;
+  padding-right: 10vw;
 }
 
-h1 {
+h1{
   margin: 0;
 }
-nav ul {
+nav ul{
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -68,10 +68,10 @@ nav ul {
   background-color: white;
   text-align: center;
 }
-nav li {
+nav li{
   float: left;
 }
-nav a {
+nav a{
   display: block;
   color: black;
   text-align: center;
@@ -81,34 +81,68 @@ nav a {
 nav a:hover {
   background-color: darkgray;
 }
-main {
+
+.isi{
+    padding-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: stretch;
+}
+
+.kategori{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: baseline;
+	align-content: stretch;
+  margin-bottom: 1vh;
+}
+
+.tulisankategori{
+  color: white;
+  font-size: 30px;
+  padding-left: 2vw;
+  -webkit-text-stroke: 0.5px black;
+}
+
+.tulisankategori:hover{
+  font-size: 40px;
+  opacity: 60%;
+}
+
+.main{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 20px;
 }
-.product {
+
+.product{
   background-color: whitesmoke;
   width: 20%;
   border: 1px solid black;
   margin-bottom: 20px;
   box-shadow: 2px 2px 5px gray;
 }
-.product img {
+.product img{
   width: 100%;
   height: 200px;
   object-fit: contain;
 }
-.product h3 {
+.product h3{
   margin: 10px;
   text-align: center;
 }
-.product p {
+.product p{
   margin: 10px;
   font-size: 14px;
   text-align: center;
 }
-.product button {
+.product button{
   display: block;
   margin: 10px auto;
   padding: 10px;
@@ -116,7 +150,7 @@ main {
   border: none;
   cursor: pointer;
 }
-.product button:hover {
+.product button:hover{
   background-color: #99b27f;
   color: white;
 }
