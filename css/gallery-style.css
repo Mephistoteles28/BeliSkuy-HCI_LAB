@@ -1,6 +1,10 @@
 /* Add some styling to the page */
 
+<<<<<<< HEAD
 * {
+=======
+*{
+>>>>>>> 5f5c6e1a3fc5a5fd91417df5365510ec3d1591e2
   padding: 0;
   margin: 0;
 }
@@ -10,11 +14,19 @@ body {
   background-color: #734444;
 }
 
+<<<<<<< HEAD
 .logo {
   width: 8rem;
 }
 
 .header {
+=======
+.logo{
+  width: 8rem;
+}
+
+.header{
+>>>>>>> 5f5c6e1a3fc5a5fd91417df5365510ec3d1591e2
   padding: 10px;
   text-align: center;
   background-color: white;
@@ -25,21 +37,33 @@ body {
   align-content: space-between;
 }
 
+<<<<<<< HEAD
 .headerkiri {
+=======
+.headerkiri{
+>>>>>>> 5f5c6e1a3fc5a5fd91417df5365510ec3d1591e2
   display: flex;
   flex-direction: row;
   justify-content: left;
   align-items: center;
 }
 
+<<<<<<< HEAD
 .navigate {
+=======
+.navigate{
+>>>>>>> 5f5c6e1a3fc5a5fd91417df5365510ec3d1591e2
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
 }
 
+<<<<<<< HEAD
 .navigate a {
+=======
+.navigate a{
+>>>>>>> 5f5c6e1a3fc5a5fd91417df5365510ec3d1591e2
   color: black;
   padding: 0 1vh;
   font-size: 25px;
@@ -47,12 +71,21 @@ body {
   padding-left: 3vw;
 }
 
+<<<<<<< HEAD
 .navigate a:hover {
   opacity: 60%;
   font-size: 20px;
 }
 
 .logocart {
+=======
+.navigate a:hover{
+  opacity: 60%;
+  font-size: 35px;
+}
+
+.logocart{
+>>>>>>> 5f5c6e1a3fc5a5fd91417df5365510ec3d1591e2
   width: 3rem;
   padding-left: 50vw;
 }
@@ -121,7 +154,11 @@ main {
   color: white;
 }
 
+<<<<<<< HEAD
 .footer {
+=======
+.footer{
+>>>>>>> 5f5c6e1a3fc5a5fd91417df5365510ec3d1591e2
   padding: 1rem;
   background-color: #c37857;
   width: 100%;
@@ -129,6 +166,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
+<<<<<<< HEAD
 }
 
 .kiri {
@@ -147,6 +185,28 @@ main {
 }
 
 .logo2:hover {
+  width: 53px;
+  opacity: 60%;
+=======
+>>>>>>> 5f5c6e1a3fc5a5fd91417df5365510ec3d1591e2
+}
+
+.kiri{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.kanan{
+  padding-right: 10vw;
+}
+
+.logo2{
+  width: 50px;
+  padding-right: 2vw;
+}
+
+.logo2:hover{
   width: 53px;
   opacity: 60%;
 }
