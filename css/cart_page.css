@@ -158,7 +158,7 @@
 
     justify-content: center;
     
-  
+    
     align-items:center;
     text-align:center;
 
@@ -174,7 +174,9 @@
     margin: 10px;
     box-sizing: border-box;
     border: 1px solid black;
-    text-align: center;
+
+    display: flex;
+    flex-direction: column;
   }
 
   .item-name, .item-price, .item-quantity {
@@ -190,15 +192,24 @@
     
     word-spacing: 1px;
   }
-  .my-cart-words{
-    margin-top:0px;
-  }
 
+  .cart-content{
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    
+    align-items:center;
+    text-align:center;
+
+  }
  
   .item-content{
 
     display: flex;
+    
     justify-content: center;
+    align-items: center;
   }
 
   .result-item{
