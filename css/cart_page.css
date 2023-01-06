@@ -227,3 +227,18 @@ main {
   display: flex;
   flex-direction: column;
 }
+
+.confirm {
+  margin: 15px;
+  padding: 10px;
+  background-color: #734444;
+  color: aliceblue;
+  border-radius: 3px;
+  transition-duration: 0.4s;
+}
+
+.confirm:hover {
+  background-color: #c37857;
+  border-radius: 3px;
+  color: white;
+}
