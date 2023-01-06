@@ -116,7 +116,7 @@ nav a:hover {
 }
 
 .tulisankategori:hover{
-  font-size: 40px;
+  font-size: 32px;
   opacity: 60%;
 }
 
@@ -249,13 +249,12 @@ nav a:hover {
 
 .slide{
   width: 100%;
-  height: 40rem;
+  height: 50rem;
 }
 
 .slide img{
   width: 100%;
   height: 100%;
-  object-fit: cover;
 }
 
 @media screen and (max-width: 800px) {
