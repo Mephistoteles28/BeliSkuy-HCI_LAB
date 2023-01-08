@@ -243,3 +243,13 @@ main {
   border-radius: 3px;
   color: white;
 }
+
+@media screen and (max-width: 800px) {
+  .slider{
+    height: 65vw;
+  }
+
+  .slide{
+    height: 65vw;
+  }
+}

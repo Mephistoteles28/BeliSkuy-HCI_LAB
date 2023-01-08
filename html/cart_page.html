@@ -2,7 +2,9 @@
 <html>
   <head>
     <title>BeliSkuy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/cart_page.css" />
+    <script src="../js/cart-script.js" defer></script>
   </head>
   <body>
     <div class="header">
@@ -50,18 +52,20 @@
         <hr />
         <div class="result-item">
           <div class="quantity-item">3 Item(s)</div>
-
-          <div class="total-cost">Rp 200.000</div>
+          <br>
+          Delivery Cost:
+          <br>
+          <div class="total-cost" id="price">(Choose Delivery Option!)</div>
           <br />
-          <div class="delivery-option">
-            Delivery Option:
-            <select name="delivery" id="delivery">
-              <option value="jne-reguler">JNE-Reguler</option>
-              <option value="jne-ekonomi">JNE-Ekonomi</option>
-              <option value="jne-yes">JNE-YES</option>
+          <form>
+            <label for="delivery-option">Delivery option:</label>
+            <select name="delivery-option" id="delivery-option" onchange="updatePrice()">
+              <option value="none">Choose delivery option</option>
+              <option value="standard">JNE-Reguler (3-4 Days)</option>
+              <option value="express">JNE-OKE (3+ Days)</option>
+              <option value="next-day">JNE-YES (1 Day)</option>
             </select>
-            Cost: Rp 25.000
-          </div>
+          </form>
           <br />
           Tax: TBD
           <br />
@@ -69,17 +73,15 @@
           <br />
           Estimated Total:
           <br />
-          Rp 200.000
+          <br>
+          Rp 
+          <p><span id="result">0</span></p>
           <br />
-          Rp 25.000
-          <br />
-          -
-          <hr />
-          Rp 225.000
         </div>
         <button class="confirm">Confirm</button>
       </section>
     </main>
+
     <div class="footer">
       <div class="kiri">
         <img src="../img/logo/circle-beliskuy.png" alt="" class="logo" />
