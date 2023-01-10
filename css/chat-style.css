@@ -63,8 +63,6 @@ body {
 }
 
 .chatreply img{
-    display: flex;
-    
     width: 10%;
 }
 
@@ -99,3 +97,34 @@ body {
 .bawahchat img{
     width: 2rem;
 }
+
+@media screen and (max-width: 800px) {
+    .img {
+        width: 60%;
+    }
+
+    .chatreply img{
+        width: 20%;
+    }
+
+    .chat img{
+        width: 20%;
+    }
+
+    .chatreply{
+        width: 50vw;
+    }
+
+    .chat{
+        width: 50vw;
+    }
+
+    .isi{
+        background-image: url(../img/profilepic/backgroundchat.jpg);
+        height: 140vh;
+    }
+
+    .bawahchat{
+        height: 10vh;
+    }
+  }
