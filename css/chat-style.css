@@ -1,0 +1,101 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #734444;
+}
+
+.isi{
+    background-image: url(../img/profilepic/backgroundchat.jpg);
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tanggal{
+    height: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0.5rem;
+}
+
+.tanggal h3{
+    align-items: center;
+    align-content: center;
+    color: rgb(0, 0, 0);
+}
+
+.chat{
+    margin-left: 4vw;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20vw;
+}
+
+
+.content{
+    margin-left: 4vw;
+    padding: 10px;
+    background-color: rgb(255, 240, 255);
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+}
+
+.chat img{
+    width: 10%;
+}
+
+.chatreply{
+    margin-left: 4vw;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20vw;
+}
+
+.chatreply img{
+    display: flex;
+    
+    width: 10%;
+}
+
+.profile{
+    background-color: rgb(255, 242, 251);
+    padding: 1vh 2vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.img {
+    width: 20%;
+}
+
+.img img {
+    width: 20%;
+}
+
+.bawahchat{
+    padding-left: 4vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+    background-color: rgb(255, 242, 251);
+    height:4vh ;
+}
+
+.bawahchat img{
+    width: 2rem;
+}

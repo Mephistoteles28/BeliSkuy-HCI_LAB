@@ -86,6 +86,7 @@ header {
 }
 
 .kiri {
+    padding-left: 2vw;
     display: flex;
     flex-direction: row;
     align-items: center;
