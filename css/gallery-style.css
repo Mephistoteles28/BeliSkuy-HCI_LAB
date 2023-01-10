@@ -14,76 +14,8 @@ body{
   display: none !important;
 }
 
-.logo{
-  width: 8rem;
-}
-
-.header{
-  padding: 10px;
-  text-align: center;
-  background-color: white;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  align-content: space-between;
-}
-
-.headerkiri{
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-  align-items: center;
-}
-
-.navigate{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.navigate a{
-  color: black;
-  padding: 0 1vh;
-  font-size: 25px;
-  text-decoration: none;
-  padding-left: 3vw;
-}
-
-.navigate a:hover{
-  opacity: 60%;
-  font-size: 35px;
-}
-
-.logocart{
-  width: 3rem;
-  padding-right: 10vw;
-}
-
 h1{
   margin: 0;
-}
-nav ul{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: white;
-  text-align: center;
-}
-nav li{
-  float: left;
-}
-nav a{
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-nav a:hover {
-  background-color: darkgray;
 }
 
 .isi{
@@ -175,35 +107,6 @@ nav a:hover {
   color: white;
 }
 
-.footer{
-  padding: 1rem;
-  background-color: #c37857;
-  height: 4rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.kiri{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.kanan{
-  padding-right: 10vw;
-}
-
-.logo2{
-  width: 50px;
-  padding-right: 2vw;
-}
-
-.logo2:hover{
-  width: 53px;
-  opacity: 60%;
-}
-
 .slider-con{
   width: 100%;
   position: relative;
@@ -264,5 +167,17 @@ nav a:hover {
 
   .slide{
     height: 65vw;
+  }
+
+  .row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  .product {
+    width: 80%;
+    margin: 1vh 2vw;
   }
 }

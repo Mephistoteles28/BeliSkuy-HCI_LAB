@@ -10,53 +10,6 @@ body {
   flex-direction: column;
 }
 
-/* NavBar CSS */
-
-header {
-  padding: 10px;
-  text-align: center;
-  background-color: white;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.headerkiri {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.headerkiri a {
-  color: black;
-  font-size: 25px;
-  text-decoration: none;
-  padding-left: 3vw;
-}
-
-.headerkiri a:hover {
-  opacity: 60%;
-  font-size: 20px;
-}
-
-.navigate {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  width: 8rem;
-}
-
-.logocart {
-  width: 3rem;
-  padding-left: 50vw;
-  padding-right: 1.5rem;
-}
-
 /* Content CSS */
 .title {
   color: #eeedbe;
@@ -82,6 +35,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 15%;
 }
 
 .container-left img {
@@ -114,11 +68,7 @@ header {
   border-radius: 8px;
   padding: 1rem;
   margin: 1rem;
-}
-
-pre {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 8px;
+  width: 23%;
 }
 
 .edit {
@@ -129,34 +79,41 @@ pre {
   margin: 5px 0px;
 }
 
-/* Footer CSS */
-footer {
-  padding: 1rem;
-  background-color: #c37857;
+.data {
   width: 100%;
-  height: 4rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: auto;
-}
-
-.kiri {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0.5vh 0;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  justify-content: space-between;
 }
 
-.kanan {
-  padding-right: 10vw;
+.con {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
 }
 
-.logo2 {
-  width: 50px;
-  padding-right: 2vw;
-}
+@media screen and (max-width: 800px) {
+  .container {
+    flex-direction: column;
+  }
 
-.logo2:hover {
-  width: 53px;
-  opacity: 60%;
+  .container-left {
+    width: 100%;
+  }
+
+  .container-left img {
+    width: 100%;
+  }
+
+  .container-right {
+    width: 100%;
+  }
+
+  .con p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }

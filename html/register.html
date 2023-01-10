@@ -6,13 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Register</title>
     <link rel="stylesheet" href="../css/register-style.css" />
+    <link rel="stylesheet" href="../css/navfooter-style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="../js/navbar-script.js"></script>
   </head>
   <body>
     <!-- NavBar -->
     <header>
       <div class="headerkiri">
-        <img src="../img/logo/circle-beliskuy.png" alt="logo" class="logo" />
-        <div class="navigate">
+        <div class="logo">
+          <img src="../img/logo/circle-beliskuy.png" alt="logo" />
+        </div>
+        <div class="navigate" id="navList">
           <a href="gallery.html">Gallery</a>
           <a href="">Chat with Us</a>
           <a href="userprofile.html">Your Profile</a>
@@ -21,6 +26,13 @@
       </div>
       <div class="headerkanan">
         <a href="./cart_page.html"><img src="../img/logo/cart.png" alt="cart" class="logocart" /></a>
+        <div class="media">
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
       </div>
     </header>
 
@@ -61,8 +73,8 @@
     </main>
 
     <div class="footer">
-        <div class="kiri">
-          <img src="../img/logo/circle-beliskuy.png" alt="" class="logo" />
+        <div class="kiri logo">
+          <img src="../img/logo/circle-beliskuy.png" alt="" />
           <div>©Copyright 2022 BeliSkuy</div>
         </div>
         <div class="kanan">

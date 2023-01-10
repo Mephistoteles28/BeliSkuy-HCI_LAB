@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BeliSkuy</title>
     <link rel="stylesheet" href="../css/gallery-style.css" />
+    <link rel="stylesheet" href="../css/navfooter-style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="../js/navbar-script.js" defer></script>
     <script src="../js/gallery-script.js" defer></script>
   </head>
   <body>
-    <div class="header">
+    <!-- NavBar -->
+    <header>
       <div class="headerkiri">
-        <img src="../img/logo/circle-beliskuy.png" alt="logo" class="logo" />
-        <div class="navigate">
+        <div class="logo">
+          <img src="../img/logo/circle-beliskuy.png" alt="logo" />
+        </div>
+        <div class="navigate" id="navList">
           <a href="gallery.html">Gallery</a>
           <a href="">Chat with Us</a>
           <a href="userprofile.html">Your Profile</a>
@@ -18,11 +26,16 @@
         </div>
       </div>
       <div class="headerkanan">
-        <a href="./cart_page.html">
-          <img src="../img/logo/cart.png" alt="cart" class="logocart" />
-        </a>
+        <a href="./cart_page.html"><img src="../img/logo/cart.png" alt="cart" class="logocart" /></a>
+        <div class="media">
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
       </div>
-    </div>
+    </header>
 
     <div class="slider-con">
       <div class="slider">
@@ -133,8 +146,8 @@
     </div>
 
     <div class="footer">
-      <div class="kiri">
-        <img src="../img/logo/circle-beliskuy.png" alt="" class="logo" />
+      <div class="kiri logo">
+        <img src="../img/logo/circle-beliskuy.png" alt="" />
         <div>©Copyright 2022 BeliSkuy</div>
       </div>
       <div class="kanan">
@@ -151,6 +164,6 @@
           <img src="../img/logo/ig.png" alt="ig" class="logo2" />
         </a>
       </div>
-    </div>
+  </div>
   </body>
 </html>

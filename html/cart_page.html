@@ -6,23 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/cart_page.css" />
+    <link rel="stylesheet" href="../css/navfooter-style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="../js/navbar-script.js"></script>
     <script src="../js/cart-script.js" defer></script>
   </head>
   <body>
-    <div class="header">
+    <!-- NavBar -->
+    <header>
       <div class="headerkiri">
-        <img src="../img/logo/circle-beliskuy.png" alt="logo" class="logo" />
-        <div class="navigate">
+        <div class="logo">
+          <img src="../img/logo/circle-beliskuy.png" alt="logo" />
+        </div>
+        <div class="navigate" id="navList">
           <a href="gallery.html">Gallery</a>
           <a href="">Chat with Us</a>
           <a href="userprofile.html">Your Profile</a>
           <a href="register.html">Register</a>
         </div>
-        <div class="headerkanan">
-          <a href="./cart_page.html"><img src="../img/logo/cart.png" alt="cart" class="logocart" /></a>
+      </div>
+      <div class="headerkanan">
+        <a href="./cart_page.html"><img src="../img/logo/cart.png" alt="cart" class="logocart" /></a>
+        <div class="media">
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
       </div>
-    </div>
+    </header>
 
     <main>
       <section class="cart-content">
@@ -38,14 +51,18 @@
         <div class="item-content">
           <div class="item">
             <!-- Item 1 -->
-            <img src="../img/shirt/shirt1.jpg" alt="logo" class="logo" />
+            <div>
+              <img src="../img/shirt/shirt1.jpg" alt="logo" class="logo" />
+            </div>
             <span class="item-name">Shirt 1</span>
             <span class="item-price">Rp 50.000</span>
             <span class="item-quantity">Quantity: 2</span>
           </div>
           <div class="item">
             <!-- Item 2 -->
-            <img src="../img/pants/pants2.jpg" alt="logo" class="logo" />
+            <div>
+              <img src="../img/pants/pants2.jpg" alt="logo" class="logo" />
+            </div>
             <span class="item-name">Pants 2</span>
             <span class="item-price">Rp 100.000</span>
             <span class="item-quantity">Quantity: 1</span>
@@ -86,8 +103,8 @@
     </main>
 
     <div class="footer">
-      <div class="kiri">
-        <img src="../img/logo/circle-beliskuy.png" alt="" class="logo" />
+      <div class="kiri logo">
+        <img src="../img/logo/circle-beliskuy.png" alt="" />
         <div>©Copyright 2022 BeliSkuy</div>
       </div>
       <div class="kanan">
