@@ -86,12 +86,13 @@ body {
 
 .bawahchat {
   padding-left: 4vw;
+  padding-bottom: 1vw;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
   align-content: center;
-  background-color: rgb(255, 242, 251);
+  /* background-color: rgb(255, 242, 251); */
   height: 4vh;
 }
 
