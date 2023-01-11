@@ -40,6 +40,7 @@ body {
 
 .container-left img {
   border-radius: 5px;
+  width: 15vw;
 }
 
 .container-left button {
