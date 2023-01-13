@@ -117,7 +117,7 @@ header {
 
   .navigate.active {
     flex-direction: column;
-    position: fixed;
+    position: absolute;
     padding: 3vh 0;
     left: 0;
     top: 14.2vh;
@@ -127,15 +127,16 @@ header {
     transition: 0.3s;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
   }
-
+  
   .navigate.active a {
     padding: 1vh 0;
   }
-
+  
   .navigate {
     width: 100%;
-    position: fixed;
+    position: absolute;
     left: -100%;
+    z-index: 4;
   }
 
   .hamburger {
